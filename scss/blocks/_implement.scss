@@ -1,0 +1,52 @@
+.implement-section {
+    padding: 150px 0 0px;
+}
+.implement__content--wrapper {
+    @include display($items:center,$space:flex-start,$gap:125px);
+}
+.implement__wrapp {
+    max-width: 445px;
+}
+.implement__title {
+    @include textStyle($FW:400,$FS:48px,$LH:56px,$CASE:inherit,$MB:24px,$CLR:#36536B);
+}
+.implement__text {
+    @include textStyle($FW:400,$FS:15px,$LH:28px,$CASE:inherit,$MB:0px,$CLR:#6C8294);
+    font-family: Public Sans;
+}
+@media (max-width:938px){
+    .implement-section {
+        padding: 100px 0 0;
+    }
+    .implement__content--wrapper {
+        flex-direction: column;
+        @include display($items:center,$space:flex-start,$gap:48px);
+    }
+    .implement__img{
+        width: 410px;
+        height: 250px;
+    }
+    .implement__wrapp {
+        max-width:573px;
+        text-align: center;
+    }
+}
+@media (max-width:450px){
+    .implement-section {
+        padding: 80px 0 0;
+    }
+    .implement__content--wrapper {
+        @include display($items:center,$space:flex-start,$gap:30px);
+    }
+    .implement__img{
+        width: 328px;
+        height: 209px;
+    }
+    .implement__wrapp {
+        max-width:573px;
+        text-align: center;
+    }
+    .implement__title {
+        @include textStyle($FW:400,$FS:36px,$LH:36px,$CASE:inherit,$MB:24px,$CLR:#36536B);
+    }
+}
